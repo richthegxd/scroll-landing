@@ -1,0 +1,109 @@
+/* Reset */
+@import "./reset.css";
+
+/* Variables */
+@import "./variables.css";
+
+/* Fonts */
+@import "./fonts.css";
+
+/* Main */
+body {
+  background: url("../img/bg.jpg");
+  background-size: 50px;
+
+  color: #fafafa;
+  font-family: "Raleway";
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit";
+}
+
+.content,
+.hero-section,
+.main-header,
+.portfolio__gallery > * {
+  will-change: transform;
+}
+
+/* Container */
+.container {
+  padding: 0 7vw;
+}
+
+/* Hero */
+.hero-section__image {
+  z-index: -1;
+
+  position: absolute;
+  top: 8vh;
+  left: 37vw;
+
+  width: calc(var(--index) * 36);
+}
+
+.main-header {
+  height: 100vh;
+}
+
+.main-header__title {
+  position: absolute;
+  bottom: 12vh;
+
+  width: min-content;
+
+  font-size: calc(var(--index) * 8);
+  line-height: 0.9;
+}
+
+/* Gallery */
+.portfolio__gallery > * {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  flex: 1;
+}
+
+.portfolio__gallery {
+  display: flex;
+
+  padding: calc(var(--index) * 8) 0;
+}
+
+.portfolio__gallery__left {
+  margin-top: calc(var(--gallery-gap) * 1.5);
+}
+
+.portfolio__gallery__right .portfolio__gallery__item {
+  margin: var(--gallery-gap) 0 0 0;
+}
+
+.portfolio__gallery__item {
+  max-width: calc(var(--index) * 21);
+  max-height: 90vh;
+
+  margin-bottom: var(--gallery-gap);
+
+  border-radius: 8px;
+}
+
+.portfolio__gallery__text h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--brand-color-1);
+  margin-bottom: 1.5rem;
+}
+
+.portfolio__gallery__text p {
+  line-height: 1.75;
+  color: var(--brand-color-2);
+}

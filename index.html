@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="hero-section">
+          <img
+            data-speed=".6"
+            class="hero-section__image"
+            src="img/hero.png"
+            alt="hero"
+          />
+
+          <div class="container">
+            <div data-speed=".75" class="main-header">
+              <h1 class="main-header__title">creative scroll</h1>
+            </div>
+          </div>
+        </header>
+
+        <div class="portfolio">
+          <div class="container">
+            <main class="portfolio__gallery">
+              <div data-speed=".9" class="portfolio__gallery__left">
+                <img
+                  class="portfolio__gallery__item"
+                  src="img/work/1.jpg"
+                  alt="work 1"
+                />
+                <img
+                  class="portfolio__gallery__item"
+                  src="img/work/2.jpg"
+                  alt="work 2"
+                />
+
+                <div class="portfolio__gallery__text portfolio__gallery__item">
+                  <h2>Creative floating scroll with amazing parallax effect</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor amount scrolling.
+                  </p>
+                </div>
+
+                <img
+                  class="portfolio__gallery__item"
+                  src="img/work/6.jpg"
+                  alt="work 6"
+                />
+              </div>
+              <div data-speed="1.1" class="portfolio__gallery__right">
+                <div class="portfolio__gallery__text portfolio__gallery__item">
+                  <h2>Creative floating scroll with amazing parallax effect</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor amount scrolling.
+                  </p>
+                </div>
+
+                <img
+                  class="portfolio__gallery__item"
+                  src="img/work/3.jpg"
+                  alt="work 3"
+                />
+                <img
+                  class="portfolio__gallery__item"
+                  src="img/work/4.jpg"
+                  alt="work 4"
+                />
+                <img
+                  class="portfolio__gallery__item"
+                  src="img/work/5.jpg"
+                  alt="work 5"
+                />
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

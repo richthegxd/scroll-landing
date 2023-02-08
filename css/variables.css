@@ -1,0 +1,7 @@
+:root {
+  --index: calc(1vw + 1vh);
+  --gallery-gap: calc(var(--index) * 10);
+
+  --brand-color-1: #f4efec;
+  --brand-color-2: #cdc6c3;
+}
